@@ -10,7 +10,7 @@ function reduce(array, calcsum, total) {
 }
 
 function calcsum(total, element) {
-    return total + element
+    return total * element
 }
 
 console.log(reduce(array, calcsum, total));
