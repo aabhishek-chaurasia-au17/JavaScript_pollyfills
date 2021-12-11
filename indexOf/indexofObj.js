@@ -10,4 +10,4 @@ Array.prototype.myIndexof = function(text) {
 
 const arr = ['Abhishek', 'Pallav', 'Bhumika', 'Riya']
 
-console.log(arr.myIndexof('Riya'));
+console.log(arr.myIndexof('Pallav'));

@@ -1,16 +1,13 @@
 
- Array.prototype.myforeach = function(myfunc){
-    newArr = []
+ Array.prototype.myforeach = function(callback){
     for(let i = 0; i < this.length; i++){
-        newArr.push(myfunc(this[i], i, this))
+        callback(this[i], i, this)
     }
-    return newArr
 }
 
 const arr = [35, 25, 45, 55, 50, 25]
 
-let result = arr.myforeach(function(element, index, array ){
-    return element
+arr.myforeach(function(element, index, array ){
+    console.log(element);
 })
 
-console.log(result);

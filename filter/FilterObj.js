@@ -10,8 +10,8 @@ Array.prototype.myfilter = function(condition) {
 
 const ages = [32, 33, 16, 40];
 
-const result = ages.myfilter( function condition(age) {
-    return age >= 18;
+const result = ages.myfilter( function condition(element) {
+    return element >= 18;
 });
 
 
